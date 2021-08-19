@@ -16,7 +16,7 @@ const Post = mongoose.model(
    description: String,
    userId: {
        type: mongoose.Schema.ObjectId,
-       required: true,
+      //  required: true,
        ref: "User"
    },
    create_date: {

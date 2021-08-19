@@ -39,7 +39,7 @@ module.exports = function(app){
     )
     app.get(
         "/api/auth/getAllUser",
-        verify.Token,
+        //verify.Token,
         controller.getAllUser
     )
     // app.post(

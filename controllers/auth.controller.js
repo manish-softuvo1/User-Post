@@ -48,7 +48,7 @@ exports.signin = async (req, res) => {
           res.status(500).send({ message: err });
           return;
         }
-        console.log("weruiop[",req.body.password,
+        console.log("weruiop",req.body.password,
           user.password)
   
         if (!user) {

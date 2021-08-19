@@ -22,7 +22,7 @@ checkDuplicateUserEmailOrPhone = (req, res, next) => {
         }
         // Phone
         User.findOne({
-            phone: req.body.phone
+            phone: req.body.phone || ""
         }).exec((err, user) => {
             if(err){
                 res.status(500).send({ 
